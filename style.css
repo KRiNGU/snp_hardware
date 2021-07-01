@@ -335,7 +335,7 @@ button {
 .times__elem_active {
   border-bottom: 2px solid #f7ab32; }
 
-.best__switch-times {
+.switch {
   display: flex;
   justify-content: space-between;
   align-items: center;
