@@ -7,10 +7,6 @@
 
 /* Убираем внешние отступы */
 body,
-h1,
-h2,
-h3,
-h4,
 p,
 ul[class],
 ol[class],
@@ -133,4 +129,121 @@ button {
 
 .pannel__elem_mobile {
   display: none; }
+
+.main {
+  margin: auto;
+  margin-top: 39px;
+  max-width: 1060px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 70px);
+  column-gap: 20px;
+  grid-template-rows: 30px, 1009px, 66px;
+  row-gap: 20px; }
+
+.today__title {
+  font-family: "PT Sans Caption", sans-serif;
+  color: black;
+  font-size: 28px;
+  line-height: 22px;
+  margin: 0;
+  height: 41px;
+  letter-spacing: -0.02em;
+  grid-column-start: 1;
+  grid-column-end: 5; }
+
+.today {
+  grid-column-start: 1;
+  grid-column-end: 10; }
+
+.today__first {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 492px;
+  background: url(./src/assets/yourself.jpg);
+  color: white; }
+
+.article__type {
+  font-family: "PT Sans Caption", sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 2px;
+  width: 118px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.today-article__type {
+  background-color: #faaf3f; }
+
+.first-article__type {
+  margin-top: 130px; }
+
+.today-article__title {
+  margin-top: 40px;
+  font-family: "PT Sans Caption", sans-serif;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -2%; }
+
+.today-article__text {
+  margin-top: 45px;
+  margin-top: 28px;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal; }
+
+.today__footer {
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 23px; }
+
+.author {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold; }
+
+.data {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 24px;
+  height: 23px; }
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 169px;
+  height: 17px; }
+
+.stats__elem {
+  font-family: "PT Sans Caption", sans-serif;
+  color: white;
+  font-size: 10px;
+  line-height: 16px;
+  padding-left: 19px;
+  height: 16px; }
+
+.elem__views {
+  background: left no-repeat url(./src/assets/views.svg); }
+
+.elem__likes {
+  background: left no-repeat url(./src/assets/dog.svg); }
+
+.elem__comments {
+  background: left no-repeat url(./src/assets/comments.svg); }
+
+.elem__reposts {
+  background: left no-repeat url(./src/assets/reposts.svg); }
 

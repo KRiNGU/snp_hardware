@@ -15,20 +15,20 @@
   <body>
     <div class="container">
       <header class="header">
-          <div class="header__content">
-            <img
-              src="./src/assets/logo.svg"
-              alt="Head logotype"
-              class="header__logo"
-            />
-            <div class="header__text">
-              Здесь думающие ​люди ​делятся ​уникальным ​​опытом. ​​Здесь будет
-              одинаково ​интересно ​программистам ​и журналистам, ​​админам ​и
-              рекламщикам, ​аналитикам ​и дизайнерам, ​менеджерам ​высшего ​и
-              среднего ​звена, ​ владельцам ​крупных ​компаний ​и небольших
-              ​фирм, ​а также ​всем ​тем, ​для кого ​IT — ​это не просто ​две
-              буквы ​алфавита.
-            </div>
+        <div class="header__content">
+          <img
+            src="./src/assets/logo.svg"
+            alt="Head logotype"
+            class="header__logo"
+          />
+          <div class="header__text">
+            Здесь думающие ​люди ​делятся ​уникальным ​​опытом. ​​Здесь будет
+            одинаково ​интересно ​программистам ​и журналистам, ​​админам ​и
+            рекламщикам, ​аналитикам ​и дизайнерам, ​менеджерам ​высшего ​и
+            среднего ​звена, ​ владельцам ​крупных ​компаний ​и небольших ​фирм,
+            ​а также ​всем ​тем, ​для кого ​IT — ​это не просто ​две буквы
+            ​алфавита.
+          </div>
         </div>
         <button class="button header__button-enter">Вход</button>
       </header>
@@ -36,21 +36,11 @@
         <div class="nav__content">
           <button class="button nav__button-hamburger" type="button"></button>
           <div class="nav__pannel">
-            <button class="button pannel__elem">
-              Новости
-            </button>
-            <button class="button pannel__elem">
-              Видео
-            </button>
-            <button class="button pannel__elem">
-              Тесты
-            </button>
-            <button class="button pannel__elem">
-              Серии
-            </button>
-            <button class="button pannel__elem">
-              Рубрики
-            </button>
+            <button class="button pannel__elem">Новости</button>
+            <button class="button pannel__elem">Видео</button>
+            <button class="button pannel__elem">Тесты</button>
+            <button class="button pannel__elem">Серии</button>
+            <button class="button pannel__elem">Рубрики</button>
             <button class="button pannel__elem pannel__elem_mobile">
               Поиск
             </button>
@@ -58,26 +48,40 @@
           <button class="button nav__button-find" type="button"></button>
         </div>
       </nav>
-      <h1 class="today">Сегодня в выпуске</h1>
       <main class="main">
+        <h1 class="today__title">Сегодня в выпуске</h1>
         <section class="today">
           <article class="today__first">
-            <div class="article__type today-article__type"></div>
-            <h2 class="title today-article__title"></h2>
-            <p class="text today-article__text"></p>
-            <p class="author today-article__author"></p>
-            <ul class="stats today-article__stats">
-              <li class="stats__elem elem__views">4567</li>
-              <li class="stats__elem elem__likes">12</li>
-              <li class="stats__elem elem__comments">45</li>
-              <li class="stats__elem elem__reposts">678</li>
-            </ul>
+            <div class="article__type today-article__type first-article__type">
+              СДЕЛАЙ САМ
+            </div>
+            <h2 class="title today-article__title">
+              БЛОКНОТ С ОСЦИЛЛОГРАФОМ И ГЕНЕРАТОРОМ ЧАСТОТ (ЗВУКОВОЙ КАРТОЙ)
+            </h2>
+            <p class="text today-article__text">
+              Решил немного написать про свою поделку. Несколько раз попадались
+              разнообразные diy линейки. Захотелось сделать себе что-то
+              подобное, многофункциональное. Форм-фактор линейки мне не очень
+              подходил, решил сделать в виде блокнота.
+            </p>
+            <div class="today__footer">
+              <p class="author first-article__author">
+                GMaksim2008 /
+                <span class="data today-article__data">22 марта, 12:15</span>
+              </p>
+              <ul class="stats today-article__stats">
+                <li class="stats__elem elem__views">4567</li>
+                <li class="stats__elem elem__likes">12</li>
+                <li class="stats__elem elem__comments">45</li>
+                <li class="stats__elem elem__reposts">678</li>
+              </ul>
+            </div>
           </article>
           <article class="today__second">
             <div class="article__type today-article__type"></div>
             <h2 class="title today-article__title"></h2>
             <p class="text today-article__text"></p>
-            <p class="author today-article__author"></p>
+            <p class="author second-article__author"></p>
             <ul class="stats today-article__stats">
               <li class="stats__elem elem__views">4567</li>
               <li class="stats__elem elem__likes">12</li>
@@ -89,7 +93,7 @@
             <div class="article__type today-article__type"></div>
             <h2 class="title today-article__title"></h2>
             <p class="text today-article__text"></p>
-            <p class="author today-article__author"></p>
+            <p class="author third-article__author"></p>
             <ul class="stats today-article__stats">
               <li class="stats__elem elem__views">4567</li>
               <li class="stats__elem elem__likes">12</li>
