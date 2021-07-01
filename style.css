@@ -60,6 +60,8 @@ button {
   margin: auto; }
 
 .button {
+  background: none;
+  padding: 0px;
   border: none;
   border-radius: 2px; }
 
@@ -70,12 +72,9 @@ button {
   height: 173px;
   display: inline-block; }
 
-.header__container {
-  max-width: 1085px;
-  width: 100%;
-  margin-left: 47px; }
-
 .header__content {
+  margin-left: 47px;
+  max-width: 1085px;
   width: 100%;
   margin-top: 49px;
   display: flex;
@@ -99,4 +98,39 @@ button {
   font-size: 15px;
   line-height: 10px;
   font-weight: 700px; }
+
+.nav {
+  height: 48px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.nav__content {
+  position: relative;
+  display: flex;
+  height: inherit;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 47px; }
+
+.nav__button-hamburger {
+  background: url(./src/assets/hamburger.svg);
+  width: 16px;
+  height: 13px; }
+
+.nav__pannel {
+  margin-left: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 476px; }
+
+.nav__button-find {
+  right: 16px;
+  background: url(./src/assets/find.svg);
+  position: absolute;
+  width: 15px;
+  height: 14px; }
+
+.pannel__elem_mobile {
+  display: none; }
 
