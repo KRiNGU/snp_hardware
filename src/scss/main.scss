@@ -32,7 +32,7 @@
     margin-left: 47px;
     max-width: 1085px;
     width: 100%;
-    margin-top: 49px;
+    margin-top: 45px;
     display: flex;
     justify-content: space-between;
 }
@@ -45,8 +45,8 @@
 
 .header__button-enter {
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 13px;
+    right: 20px;
     background: none;
     @include fontz("PT Sans", white, 15px, 10px);
     font-weight: 700px;
@@ -82,11 +82,14 @@
 }  
 
 .nav__button-find {
-    right: 16px;
+    right: 13px;
     background: url(./src/assets/find.svg);
     position: absolute;
     width: 15px;
     height: 14px;
+}
+
+.pannel__elem {
 }
 
 .pannel__elem_mobile {

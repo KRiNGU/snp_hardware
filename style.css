@@ -76,7 +76,7 @@ button {
   margin-left: 47px;
   max-width: 1085px;
   width: 100%;
-  margin-top: 49px;
+  margin-top: 45px;
   display: flex;
   justify-content: space-between; }
 
@@ -90,8 +90,8 @@ button {
 
 .header__button-enter {
   position: absolute;
-  top: 17px;
-  right: 17px;
+  top: 13px;
+  right: 20px;
   background: none;
   font-family: "PT Sans", sans-serif;
   color: white;
@@ -125,7 +125,7 @@ button {
   max-width: 476px; }
 
 .nav__button-find {
-  right: 16px;
+  right: 13px;
   background: url(./src/assets/find.svg);
   position: absolute;
   width: 15px;
