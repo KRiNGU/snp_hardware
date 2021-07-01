@@ -273,3 +273,10 @@ $bc: #faaf3f;
     flex-direction: column;
     align-items: start;
 }
+
+// TODAY TEXTS
+
+.today__text {
+    @include fontz('PT Sans',black, 17px, 24px);
+    grid-column: 1/10;
+}

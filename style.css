@@ -294,3 +294,10 @@ button {
   flex-direction: column;
   align-items: start; }
 
+.today__text {
+  font-family: "PT Sans", sans-serif;
+  color: black;
+  font-size: 17px;
+  line-height: 24px;
+  grid-column: 1/10; }
+
