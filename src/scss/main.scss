@@ -137,9 +137,14 @@ $bc: #faaf3f;
     flex-direction: column;
 }
 
+.today-article__type {
+    margin-top: 65px;
+}
+
 // FIRST ARTICLE
 
 .today__first {
+    position: relative;
     grid-column: 1/10;
     background: url(./src/assets/yourself.jpg);
 }
@@ -177,6 +182,9 @@ $bc: #faaf3f;
 }
 
 .today__footer {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -184,8 +192,8 @@ $bc: #faaf3f;
 }
 
 .first-article__footer {
+    max-width: 749px;
     height: 23px;
-    margin-top: 45px;
 }
 
 .author {
@@ -233,12 +241,9 @@ $bc: #faaf3f;
 // SECOND ARTICLE
 
 .today__second {
+    position: relative;
     background: url(./src/assets/1998.jpg);
     grid-column: 1 / 7;
-}
-
-.second-article__type {
-    margin-top: 65px;
 }
 
 .second-article__text {
@@ -246,7 +251,24 @@ $bc: #faaf3f;
 }
 
 .second-article__footer {
-    margin-top: 37px;
+    height: 50px;
+    flex-direction: column;
+    align-items: start;
+}
+
+// THIRD ARTICLES
+
+.today__third {
+    position: relative;
+    grid-column: 7/10;
+    background: url(./src/assets/cluster.jpg);
+}
+
+.third-article__title {
+    height: 186px;
+}
+
+.third-article__footer {
     height: 50px;
     flex-direction: column;
     align-items: start;

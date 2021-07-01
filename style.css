@@ -171,7 +171,11 @@ button {
   display: flex;
   flex-direction: column; }
 
+.today-article__type {
+  margin-top: 65px; }
+
 .today__first {
+  position: relative;
   grid-column: 1/10;
   background: url(./src/assets/yourself.jpg); }
 
@@ -212,14 +216,17 @@ button {
   font-weight: normal; }
 
 .today__footer {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
 
 .first-article__footer {
-  height: 23px;
-  margin-top: 45px; }
+  max-width: 749px;
+  height: 23px; }
 
 .author {
   font-family: "PT Sans", sans-serif;
@@ -262,17 +269,27 @@ button {
   background: left no-repeat url(./src/assets/reposts.svg); }
 
 .today__second {
+  position: relative;
   background: url(./src/assets/1998.jpg);
   grid-column: 1 / 7; }
-
-.second-article__type {
-  margin-top: 65px; }
 
 .second-article__text {
   margin-top: 38px; }
 
 .second-article__footer {
-  margin-top: 37px;
+  height: 50px;
+  flex-direction: column;
+  align-items: start; }
+
+.today__third {
+  position: relative;
+  grid-column: 7/10;
+  background: url(./src/assets/cluster.jpg); }
+
+.third-article__title {
+  height: 186px; }
+
+.third-article__footer {
   height: 50px;
   flex-direction: column;
   align-items: start; }
