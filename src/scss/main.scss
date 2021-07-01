@@ -95,6 +95,8 @@ $bc: #faaf3f;
     display: none;
 }
 
+// MAIN
+
 .main {
     margin: auto;
     margin-top: 39px;
@@ -106,6 +108,8 @@ $bc: #faaf3f;
     grid-template-rows: 30px, 1009px, 66px;
     row-gap: 20px;
 }
+
+// TODAY 
 
 .today__title {
     @include fontz('PT Sans Caption', black, 28px, 22px);
@@ -119,15 +123,25 @@ $bc: #faaf3f;
 .today {
     grid-column-start: 1;
     grid-column-end: 10;
+    display: grid;
+    grid-template-columns: repeat(9, 70px);
+    column-gap: 20px;
+    row-gap: 25px;
 }
 
-.today__first {
+.today__article {
     padding: 20px;
+    height: 492px;
+    color: white;
     display: flex;
     flex-direction: column;
-    height: 492px;
+}
+
+// FIRST ARTICLE
+
+.today__first {
+    grid-column: 1/10;
     background: url(./src/assets/yourself.jpg);
-    color: white;
 }
 
 .article__type {
@@ -149,25 +163,29 @@ $bc: #faaf3f;
 }
 
 .today-article__title {
-    margin-top: 40px;
+    font-weight: 700px;
+    margin-top: 45px;
+    height: 83px;
     @include fontz('PT Sans Caption', white, 24px, 30px);
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
 }
 
 .today-article__text {
-    margin-top: 45px;
-    margin-top: 28px;
+    margin-top: 19px;
     @include fontz('PT Sans', white, 18px, 24px);
     font-weight: normal;
 }
 
 .today__footer {
-    margin-top: 45px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.first-article__footer {
     height: 23px;
+    margin-top: 45px;
 }
 
 .author {
@@ -175,7 +193,7 @@ $bc: #faaf3f;
     font-weight: bold;
 }
 
-.data {
+.date {
     font-weight: normal;
     font-size: 10px;
     line-height: 24px;
@@ -210,4 +228,26 @@ $bc: #faaf3f;
 
 .elem__reposts {
     background: left no-repeat url(./src/assets/reposts.svg);
+}
+
+// SECOND ARTICLE
+
+.today__second {
+    background: url(./src/assets/1998.jpg);
+    grid-column: 1 / 7;
+}
+
+.second-article__type {
+    margin-top: 65px;
+}
+
+.second-article__text {
+    margin-top: 38px;
+}
+
+.second-article__footer {
+    margin-top: 37px;
+    height: 50px;
+    flex-direction: column;
+    align-items: start;
 }

@@ -8,6 +8,10 @@
 /* Убираем внешние отступы */
 body,
 p,
+h1,
+h2,
+h3,
+h4,
 ul[class],
 ol[class],
 li,
@@ -154,15 +158,22 @@ button {
 
 .today {
   grid-column-start: 1;
-  grid-column-end: 10; }
+  grid-column-end: 10;
+  display: grid;
+  grid-template-columns: repeat(9, 70px);
+  column-gap: 20px;
+  row-gap: 25px; }
+
+.today__article {
+  padding: 20px;
+  height: 492px;
+  color: white;
+  display: flex;
+  flex-direction: column; }
 
 .today__first {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  height: 492px;
-  background: url(./src/assets/yourself.jpg);
-  color: white; }
+  grid-column: 1/10;
+  background: url(./src/assets/yourself.jpg); }
 
 .article__type {
   font-family: "PT Sans Caption", sans-serif;
@@ -183,16 +194,17 @@ button {
   margin-top: 130px; }
 
 .today-article__title {
-  margin-top: 40px;
+  font-weight: 700px;
+  margin-top: 45px;
+  height: 83px;
   font-family: "PT Sans Caption", sans-serif;
   color: white;
   font-size: 24px;
   line-height: 30px;
-  letter-spacing: -2%; }
+  letter-spacing: -0.02em; }
 
 .today-article__text {
-  margin-top: 45px;
-  margin-top: 28px;
+  margin-top: 19px;
   font-family: "PT Sans", sans-serif;
   color: white;
   font-size: 18px;
@@ -200,12 +212,14 @@ button {
   font-weight: normal; }
 
 .today__footer {
-  margin-top: 45px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  height: 23px; }
+  align-items: flex-end; }
+
+.first-article__footer {
+  height: 23px;
+  margin-top: 45px; }
 
 .author {
   font-family: "PT Sans", sans-serif;
@@ -214,7 +228,7 @@ button {
   line-height: 24px;
   font-weight: bold; }
 
-.data {
+.date {
   font-weight: normal;
   font-size: 10px;
   line-height: 24px;
@@ -246,4 +260,20 @@ button {
 
 .elem__reposts {
   background: left no-repeat url(./src/assets/reposts.svg); }
+
+.today__second {
+  background: url(./src/assets/1998.jpg);
+  grid-column: 1 / 7; }
+
+.second-article__type {
+  margin-top: 65px; }
+
+.second-article__text {
+  margin-top: 38px; }
+
+.second-article__footer {
+  margin-top: 37px;
+  height: 50px;
+  flex-direction: column;
+  align-items: start; }
 
