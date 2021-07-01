@@ -1,0 +1,55 @@
+@import "./nullstyle.scss";
+
+@mixin fontz($ff, $c, $fs, $lh) {
+    font-family: $ff, sans-serif;
+    color: $c;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.button {
+    border: none;
+    border-radius: 2px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #223036;
+    height: 173px;
+    display: inline-block;
+}
+
+.header__container {
+    max-width: 1085px;
+    width: 100%;
+    margin-left: 47px;
+}
+
+.header__content {
+    width: 100%;
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__text {
+    @include fontz("PT Sans Caption", white, 14px, 22px);
+    width: 100%;
+    max-width: 658px;
+}
+
+.header__button-enter {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    background: none;
+    @include fontz("PT Sans", white, 15px, 10px);
+    font-weight: 700px;
+}

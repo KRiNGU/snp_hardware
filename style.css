@@ -1,1 +1,102 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+button {
+  cursor: pointer;
+  outline: none; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
+
+.button {
+  border: none;
+  border-radius: 2px; }
+
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #223036;
+  height: 173px;
+  display: inline-block; }
+
+.header__container {
+  max-width: 1085px;
+  width: 100%;
+  margin-left: 47px; }
+
+.header__content {
+  width: 100%;
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-between; }
+
+.header__text {
+  font-family: "PT Sans Caption", sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  max-width: 658px; }
+
+.header__button-enter {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  background: none;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 10px;
+  font-weight: 700px; }
 
