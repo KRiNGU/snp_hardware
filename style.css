@@ -27,7 +27,7 @@ dd {
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
-  line-height: 1.5; }
+  line-height: 1.2; }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
@@ -175,6 +175,7 @@ button {
   margin-top: 65px; }
 
 .today__first {
+  width: 100%;
   position: relative;
   grid-column: 1/10;
   background: url(./src/assets/yourself.jpg); }
@@ -208,7 +209,6 @@ button {
   letter-spacing: -0.02em; }
 
 .today-article__text {
-  margin-top: 19px;
   font-family: "PT Sans", sans-serif;
   color: white;
   font-size: 18px;
@@ -300,4 +300,84 @@ button {
   font-size: 17px;
   line-height: 24px;
   grid-column: 1/10; }
+
+.best {
+  grid-column: 1/10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 244px; }
+
+.best__control-pannel {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 29px; }
+
+.best__times {
+  display: flex;
+  width: 100%;
+  max-width: 495px;
+  justify-content: space-between;
+  align-items: center; }
+
+.times__elem {
+  height: 35px;
+  font-family: "PT Sans", sans-serif;
+  color: black;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  border: none; }
+
+.times__elem_active {
+  border-bottom: 2px solid #f7ab32; }
+
+.best__switch-times {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 47px; }
+
+.button__switch {
+  width: 15px;
+  height: 20px; }
+
+.button__switch_left {
+  background: no-repeat url(./src/assets/vector-left.svg); }
+
+.button__switch_right {
+  background: left no-repeat url(./src/assets/vector-left.svg);
+  transform: rotate(180deg); }
+
+.best__articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.articles__elem {
+  letter-spacing: -0.02em;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 177px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.first-best {
+  background: url(./src/assets/AIvsCOVID.jpg); }
+
+.second-best {
+  background: url(./src/assets/bioProblems.jpg); }
+
+.third-best {
+  background: url(./src/assets/dayPoints.jpg); }
 
