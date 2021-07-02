@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Brutal Type';
+    src: url(./src/fonts/BrutalBold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url(./src/fonts/BrutalMedium.woff);
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'Brutal Type';
+    src: url(./src/fonts/BrutalRegular.woff);
+    font-weight: normal;
+}
+
 @import "./nullstyle.scss";
 
 @mixin fontz($ff, $c, $fs, $lh) {
@@ -77,6 +95,7 @@ $abbc: #f7ab32;
 }
 
 .nav__pannel {
+    @include fontz('Brutal Type', black, 16px, 22px);
     margin-left: 42px;
     display: flex;
     align-items: center;
@@ -155,7 +174,8 @@ $abbc: #f7ab32;
 }
 
 .article__type {
-    @include fontz('PT Sans Caption', white, 14px, 18px);
+    @include fontz('Brutal Type', white, 14px, 18px);
+    font-weight: 500;
     border-radius: 2px;
     width: 118px;
     height: 24px;
@@ -176,7 +196,8 @@ $abbc: #f7ab32;
     font-weight: 700px;
     margin-top: 45px;
     height: 83px;
-    @include fontz('PT Sans Caption', white, 24px, 30px);
+    @include fontz('Brutal Type', white, 24px, 30px);
+    font-weight: bold;
     letter-spacing: -0.02em;
 }
 
@@ -292,6 +313,11 @@ $abbc: #f7ab32;
     flex-direction: column;
     justify-content: space-between;
     height: 244px;
+}
+
+.best-article__title {
+    @include fontz('Brutal Type', white, 15px, 24px);
+    font-weight: bold;
 }
 
 // BEST CONTROL PANNEL

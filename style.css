@@ -1,4 +1,19 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Brutal Type';
+  src: url(./src/fonts/BrutalBold.woff);
+  font-weight: bold; }
+
+@font-face {
+  font-family: 'Brutal Type';
+  src: url(./src/fonts/BrutalMedium.woff);
+  font-weight: medium; }
+
+@font-face {
+  font-family: 'Brutal Type';
+  src: url(./src/fonts/BrutalRegular.woff);
+  font-weight: normal; }
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -117,6 +132,10 @@ button {
   height: 13px; }
 
 .nav__pannel {
+  font-family: "Brutal Type", sans-serif;
+  color: black;
+  font-size: 16px;
+  line-height: 22px;
   margin-left: 42px;
   display: flex;
   align-items: center;
@@ -183,10 +202,11 @@ button {
   background: url(./src/assets/yourself.jpg); }
 
 .article__type {
-  font-family: "PT Sans Caption", sans-serif;
+  font-family: "Brutal Type", sans-serif;
   color: white;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 500;
   border-radius: 2px;
   width: 118px;
   height: 24px;
@@ -204,10 +224,11 @@ button {
   font-weight: 700px;
   margin-top: 45px;
   height: 83px;
-  font-family: "PT Sans Caption", sans-serif;
+  font-family: "Brutal Type", sans-serif;
   color: white;
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
   letter-spacing: -0.02em; }
 
 .today-article__text {
@@ -308,6 +329,13 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 244px; }
+
+.best-article__title {
+  font-family: "Brutal Type", sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold; }
 
 .best__control-pannel {
   margin-top: 10px;
