@@ -28,6 +28,7 @@
 $ac: #0776D2;
 $bc: #faaf3f;
 $abbc: #f7ab32;
+$bahc: #f49f21;
 
 .container {
     width: 100%;
@@ -94,7 +95,7 @@ $abbc: #f7ab32;
     height: 13px;
 }
 
-.nav__pannel {
+.nav__panel {
     @include fontz('Brutal Type', black, 16px, 22px);
     margin-left: 42px;
     display: flex;
@@ -112,8 +113,21 @@ $abbc: #f7ab32;
     height: 14px;
 }
 
-.pannel__elem_mobile {
+.panel__elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 91px;
+    height: 24px;
+}
+
+.panel__elem_mobile {
     display: none;
+}
+
+.panel__title {
+    @include fontz('PT Sans Caption', black, 28px, 22px);
 }
 
 // MAIN
@@ -194,16 +208,21 @@ $abbc: #f7ab32;
 
 .today-article__title {
     font-weight: 700px;
-    margin-top: 45px;
+    margin-top: 40px;
     height: 83px;
     @include fontz('Brutal Type', white, 24px, 30px);
     font-weight: bold;
     letter-spacing: -0.02em;
+    width: 100%;
+    max-width: 558px;
 }
 
 .today-article__text {
+    margin-top: 23px;
     @include fontz('PT Sans', white, 18px, 24px);
     font-weight: normal;
+    width: 100%;
+    max-width: 720px;
 }
 
 .today__footer {
@@ -271,11 +290,13 @@ $abbc: #f7ab32;
 }
 
 .second-article__text {
-    margin-top: 38px;
+    width: 100%;
+    max-width: 430px;
+    margin-top: 40px;
 }
 
 .second-article__footer {
-    height: 50px;
+    height: 54px;
     flex-direction: column;
     align-items: start;
 }
@@ -293,7 +314,7 @@ $abbc: #f7ab32;
 }
 
 .third-article__footer {
-    height: 50px;
+    height: 54px;
     flex-direction: column;
     align-items: start;
 }
@@ -320,9 +341,9 @@ $abbc: #f7ab32;
     font-weight: bold;
 }
 
-// BEST CONTROL PANNEL
+// BEST CONTROL panel
 
-.best__control-pannel {
+.best__control-panel {
     margin-top: 10px;
     display: flex;
     width: 100%;
@@ -437,7 +458,7 @@ $abbc: #f7ab32;
 // SERIES LIST ELEM 
 
 .list__elem {
-    padding: 20px 20px 27px 16px;
+    padding: 27px 20px 27px 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -483,6 +504,8 @@ $abbc: #f7ab32;
     padding-left: 20px;
     background: top 6px left no-repeat url(./src/assets/pointBeforeText.svg);
     z-index: 1;
+    text-decoration: none;
+    color: black;
 }
 
 // SERIES READ BUTTON
@@ -654,4 +677,76 @@ $abbc: #f7ab32;
 
 .NADIS__text {
     @include fontz('PT Sans', #333333, 15px, 21px);
+}
+
+// EFFECTS
+
+@mixin makevisible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.today__first:hover {
+    .corner {
+        @include makevisible();
+    }
+}
+
+.today__second:hover {
+    .corner {
+        @include makevisible();
+    }
+
+}
+
+.today__third:hover {
+    .corner {
+        @include makevisible();
+    }
+}
+
+.corner {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.top-left {
+    top: 8px;
+    left: 8px;
+}
+
+.top-right {
+    top: 8px;
+    right: 8px;
+    transform: rotate(90deg);
+}
+
+.bottom-right {
+    bottom: 8px;
+    right: 8px;
+    transform: rotate(180deg)
+}
+
+.bottom-left {
+    bottom: 8px;
+    left: 8px;
+    transform: rotate(-90deg)
+}
+
+.panel__elem:hover {
+    background-color: $bc;
+    color: white;
+}
+
+.text-list__elem:hover {
+    color: $bc;
+}
+
+.aside__all:hover {
+    text-decoration: underline;
+}
+
+.yellow-button:hover {
+    background-color: $bahc;
 }

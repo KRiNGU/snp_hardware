@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./src/assets/favicon.svg" type="image/svg">
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Caption&display=swap"
       rel="stylesheet"
@@ -35,13 +36,13 @@
       <nav class="nav">
         <div class="nav__content">
           <button class="button nav__button-hamburger" type="button"></button>
-          <div class="nav__pannel">
-            <button class="button pannel__elem">Новости</button>
-            <button class="button pannel__elem">Видео</button>
-            <button class="button pannel__elem">Тесты</button>
-            <button class="button pannel__elem">Серии</button>
-            <button class="button pannel__elem">Рубрики</button>
-            <button class="button pannel__elem pannel__elem_mobile">
+          <div class="nav__panel">
+            <button class="button panel__elem">Новости</button>
+            <button class="button panel__elem">Видео</button>
+            <button class="button panel__elem">Тесты</button>
+            <button class="button panel__elem">Серии</button>
+            <button class="button panel__elem">Рубрики</button>
+            <button class="button panel__elem panel__elem_mobile">
               Поиск
             </button>
           </div>
@@ -52,6 +53,10 @@
         <h1 class="today__title">Сегодня в выпуске</h1>
         <section class="today">
           <article class="today__article today__first">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
             <div class="article__type today-article__type first-article__type">
               СДЕЛАЙ САМ
             </div>
@@ -78,6 +83,10 @@
             </div>
           </article>
           <article class="today__article today__second">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
             <div class="article__type today-article__type second-article__type">
               ЖЕЛЕЗО
             </div>
@@ -103,6 +112,10 @@
             </div>
           </article>
           <article class="today__article today__third">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
+            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
             <div class="article__type today-article__type">ЖЕЛЕЗО</div>
             <h2 class="title today-article__title third-article__title">
               КЛАСТЕР ELASTICSEARCH НА 200 ТБ+
@@ -131,7 +144,7 @@
           </article>
         </section>
         <section class="best">
-          <div class="best__control-pannel">
+          <div class="best__control-panel">
             <ul class="best__times">
               <li class="times__elem times__elem_active">Лучшее за месяц</li>
               <li class="times__elem">Лучшее за год</li>
@@ -217,48 +230,48 @@
           <ul class="series__list">
             <li class="list__elem">
               <h2 class="series__title">HARDWARE против заблуждений</h2>
-              <ul class="series-text__list">
-                <li class="text-list__elem">Мифы в IT-образовании</li>
-                <li class="text-list__elem">
+              <div class="series-text__list">
+                <a class="text-list__elem" href="">Мифы в IT-образовании</a>
+                <a class="text-list__elem" href="">
                   25 самых популярных мифов о программировании и программистах
-                </li>
-                <li class="text-list__elem">
+                </a>
+                <a class="text-list__elem" href="">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-                <li class="text-list__elem">
+                </a>
+                <a class="text-list__elem" href="">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-                <li class="text-list__elem">
+                </a>
+                <a href="" class="text-list__elem">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-              </ul>
+                </a>
+              </div>
               <button class="button yellow-button">
                 Читать 27 статей
               </button>
             </li>
             <li class="list__elem">
               <h2 class="series__title">HARDWARE против заблуждений</h2>
-              <ul class="series-text__list">
-                <li class="text-list__elem">Мифы в IT-образовании</li>
-                <li class="text-list__elem">
+              <div class="series-text__list">
+                <a href="" class="text-list__elem">Мифы в IT-образовании</a>
+                <a href="" class="text-list__elem">
                   25 самых популярных мифов о программировании и программистах
-                </li>
-                <li class="text-list__elem">
+                </a>
+                <a href="" class="text-list__elem">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-                <li class="text-list__elem">
+                </a>
+                <a href="" class="text-list__elem">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-                <li class="text-list__elem">
+                </a>
+                <a href="" class="text-list__elem">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-              </ul>
+                </a>
+              </div>
               <button class="button yellow-button">
                 Читать 27 статей
               </button>
@@ -273,17 +286,17 @@
                 <a class="aside__all all__series" href="">Все серии</a>
               </div>
               <div class="series__title">HARDWARE против заблуждений</div>
-              <ul class="aside-series__list">
-                <li class="aside-series__elem">Мифы в IT-образовании</li>
-                <li class="aside-series__elem">
+              <div class="aside-series__list">
+                <a href="" class="aside-series__elem text-list__elem">Мифы в IT-образовании</a>
+                <a href="" class="aside-series__elem text-list__elem">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-                <li class="aside-series__elem">
+                </a>
+                <a href="" class="aside-series__elem text-list__elem">
                   У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
                   вопиющих IT-заблуждений в истории
-                </li>
-              </ul>
+                </a>
+              </div>
               <button class="button aside__button-open yellow-button">
                 Читать 27 статей
               </button>

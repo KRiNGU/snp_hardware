@@ -131,7 +131,7 @@ button {
   width: 16px;
   height: 13px; }
 
-.nav__pannel {
+.nav__panel {
   font-family: "Brutal Type", sans-serif;
   color: black;
   font-size: 16px;
@@ -150,8 +150,22 @@ button {
   width: 15px;
   height: 14px; }
 
-.pannel__elem_mobile {
+.panel__elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 91px;
+  height: 24px; }
+
+.panel__elem_mobile {
   display: none; }
+
+.panel__title {
+  font-family: "PT Sans Caption", sans-serif;
+  color: black;
+  font-size: 28px;
+  line-height: 22px; }
 
 .main {
   margin: auto;
@@ -222,21 +236,26 @@ button {
 
 .today-article__title {
   font-weight: 700px;
-  margin-top: 45px;
+  margin-top: 40px;
   height: 83px;
   font-family: "Brutal Type", sans-serif;
   color: white;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  letter-spacing: -0.02em; }
+  letter-spacing: -0.02em;
+  width: 100%;
+  max-width: 558px; }
 
 .today-article__text {
+  margin-top: 23px;
   font-family: "PT Sans", sans-serif;
   color: white;
   font-size: 18px;
   line-height: 24px;
-  font-weight: normal; }
+  font-weight: normal;
+  width: 100%;
+  max-width: 720px; }
 
 .today__footer {
   position: absolute;
@@ -296,10 +315,12 @@ button {
   grid-column: 1 / 7; }
 
 .second-article__text {
-  margin-top: 38px; }
+  width: 100%;
+  max-width: 430px;
+  margin-top: 40px; }
 
 .second-article__footer {
-  height: 50px;
+  height: 54px;
   flex-direction: column;
   align-items: start; }
 
@@ -312,7 +333,7 @@ button {
   height: 186px; }
 
 .third-article__footer {
-  height: 50px;
+  height: 54px;
   flex-direction: column;
   align-items: start; }
 
@@ -337,7 +358,7 @@ button {
   line-height: 24px;
   font-weight: bold; }
 
-.best__control-pannel {
+.best__control-panel {
   margin-top: 10px;
   display: flex;
   width: 100%;
@@ -426,7 +447,7 @@ button {
   justify-content: space-between; }
 
 .list__elem {
-  padding: 20px 20px 27px 16px;
+  padding: 27px 20px 27px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -464,7 +485,9 @@ button {
 .text-list__elem {
   padding-left: 20px;
   background: top 6px left no-repeat url(./src/assets/pointBeforeText.svg);
-  z-index: 1; }
+  z-index: 1;
+  text-decoration: none;
+  color: black; }
 
 .yellow-button {
   align-self: center;
@@ -607,4 +630,53 @@ button {
   color: #333333;
   font-size: 15px;
   line-height: 21px; }
+
+.today__first:hover .corner {
+  visibility: visible;
+  opacity: 1; }
+
+.today__second:hover .corner {
+  visibility: visible;
+  opacity: 1; }
+
+.today__third:hover .corner {
+  visibility: visible;
+  opacity: 1; }
+
+.corner {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0; }
+
+.top-left {
+  top: 8px;
+  left: 8px; }
+
+.top-right {
+  top: 8px;
+  right: 8px;
+  transform: rotate(90deg); }
+
+.bottom-right {
+  bottom: 8px;
+  right: 8px;
+  transform: rotate(180deg); }
+
+.bottom-left {
+  bottom: 8px;
+  left: 8px;
+  transform: rotate(-90deg); }
+
+.panel__elem:hover {
+  background-color: #faaf3f;
+  color: white; }
+
+.text-list__elem:hover {
+  color: #faaf3f; }
+
+.aside__all:hover {
+  text-decoration: underline; }
+
+.yellow-button:hover {
+  background-color: #f49f21; }
 
