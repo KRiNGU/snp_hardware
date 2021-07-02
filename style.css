@@ -94,14 +94,22 @@ button {
   margin-top: 45px;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 1024px) {
+    .header__content {
+      max-width: 943px;
+      margin-left: 31px; } }
 
 .header__text {
   font-family: "PT Sans Caption", sans-serif;
   color: white;
   font-size: 14px;
   line-height: 22px;
+  font-weight: normal;
   width: 100%;
-  max-width: 658px; }
+  max-width: 660px; }
+  @media (max-width: 1024px) {
+    .header__text {
+      max-width: 550px; } }
 
 .header__button-enter {
   position: absolute;
@@ -136,12 +144,12 @@ button {
   color: black;
   font-size: 16px;
   line-height: 22px;
-  margin-left: 42px;
+  margin-left: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 476px; }
+  max-width: 504px; }
 
 .nav__button-find {
   right: 13px;
@@ -175,8 +183,10 @@ button {
   display: grid;
   grid-template-columns: repeat(12, 70px);
   column-gap: 20px;
-  grid-template-rows: 30px, 1009px, 66px;
   row-gap: 20px; }
+  @media (max-width: 1024px) {
+    .main {
+      margin: 39px 10px 0 10px; } }
 
 .today__title {
   font-family: "PT Sans Caption", sans-serif;
@@ -187,17 +197,19 @@ button {
   height: 41px;
   letter-spacing: -0.02em;
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row: 1/2; }
+  grid-column-end: 5; }
 
 .today {
-  grid-column-start: 1;
-  grid-column-end: 10;
-  grid-row: 2/3;
   display: grid;
   grid-template-columns: repeat(9, 70px);
   column-gap: 20px;
-  row-gap: 25px; }
+  row-gap: 25px;
+  grid-column: 1 / 10;
+  grid-template-columns: repeat 9, 70px; }
+  @media (max-width: 1024px) {
+    .today {
+      grid-column: 1 / 9;
+      grid-template-columns: 2fr 1fr; } }
 
 .today__article {
   padding: 20px;
@@ -212,8 +224,11 @@ button {
 .today__first {
   width: 100%;
   position: relative;
-  grid-column: 1/10;
-  background: url(./src/assets/yourself.jpg); }
+  background: url(./src/assets/yourself.jpg);
+  grid-column: 1/10; }
+  @media (max-width: 1024px) {
+    .today__first {
+      grid-column: 1 / 3; } }
 
 .article__type {
   font-family: "Brutal Type", sans-serif;
@@ -267,7 +282,11 @@ button {
 
 .first-article__footer {
   max-width: 749px;
+  width: 100%;
   height: 23px; }
+  @media (max-width: 1024px) {
+    .first-article__footer {
+      max-width: 720px; } }
 
 .author {
   font-family: "PT Sans", sans-serif;
@@ -313,6 +332,9 @@ button {
   position: relative;
   background: url(./src/assets/1998.jpg);
   grid-column: 1 / 7; }
+  @media (max-width: 1024px) {
+    .today__second {
+      grid-column: 1; } }
 
 .second-article__text {
   width: 100%;
@@ -328,6 +350,9 @@ button {
   position: relative;
   grid-column: 7/10;
   background: url(./src/assets/cluster.jpg); }
+  @media (max-width: 1024px) {
+    .today__third {
+      grid-column: 2; } }
 
 .third-article__title {
   height: 186px; }
@@ -343,6 +368,9 @@ button {
   font-size: 17px;
   line-height: 24px;
   grid-column: 1/10; }
+  @media (max-width: 1024px) {
+    .today__text {
+      grid-column: 1/3; } }
 
 .best {
   grid-column: 1/10;
@@ -350,6 +378,9 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 244px; }
+  @media (max-width: 1024px) {
+    .best {
+      grid-column: 1/9; } }
 
 .best-article__title {
   font-family: "Brutal Type", sans-serif;
@@ -433,15 +464,18 @@ button {
 
 .series {
   grid-column: 1 / 10; }
+  @media (max-width: 1024px) {
+    .series {
+      grid-column: 1 / 9; } }
 
 .series__panel {
-  margin-top: 20px;
+  margin-top: 17px;
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
 .series__list {
-  margin-top: 30px;
+  margin-top: 35px;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -455,6 +489,9 @@ button {
   max-width: 380px;
   height: 516px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 1024px) {
+    .list__elem {
+      max-width: 350px; } }
 
 .series__title {
   width: 100%;
@@ -501,8 +538,11 @@ button {
   background-color: #faaf3f; }
 
 .aside {
-  grid-column: 10 / 13;
+  grid-column: 10/13;
   grid-row: 2/4; }
+  @media (max-width: 1024px) {
+    .aside {
+      grid-column: 9 / 13; } }
 
 .aside__type {
   font-family: "Brural Type", sans-serif;
@@ -569,6 +609,10 @@ button {
   z-index: 0; }
 
 .aside-series__elem {
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+  font-size: 15px;
+  line-height: 21px;
   z-index: 1;
   padding-left: 15px;
   background: top 5px left no-repeat url(./src/assets/pointBeforeText.svg); }
