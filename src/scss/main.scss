@@ -7,6 +7,7 @@
     line-height: $lh;
 }
 
+$ac: #0776D2;
 $bc: #faaf3f;
 $abbc: #f7ab32;
 
@@ -119,11 +120,13 @@ $abbc: #f7ab32;
     letter-spacing: -0.02em;
     grid-column-start: 1;
     grid-column-end: 5;
+    grid-row: 1/2;
 }
 
 .today {
     grid-column-start: 1;
     grid-column-end: 10;
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: repeat(9, 70px);
     column-gap: 20px;
@@ -458,11 +461,171 @@ $abbc: #f7ab32;
 
 // SERIES READ BUTTON
 
-.series__button-read {
+.yellow-button {
     align-self: center;
     @include fontz('Brutal Type', white, 14px, 18px);
     width: 100%;
     max-width: 197px;
     height: 32px;
     background-color: $bc;
+}
+
+// ASIDE
+
+.aside {
+    grid-column: 10 / 13;
+    grid-row: 2/4;
+}
+
+.aside__type {
+    @include fontz('Brural Type', white, 14px, 18px);
+    width: 100%;
+    max-width: 92px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #333333;
+    text-align: center;
+    padding: 4px;
+}
+
+// ASIDE LIST
+
+.aside__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1372px;
+}
+
+// ASIDE TOP PANEL
+
+.top__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// ASIDE ALL SERIES
+
+.aside__all {
+    @include fontz('PT Sans', $ac, 14px, 21px);
+    text-decoration: none;
+}
+
+.aside__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+// ASIDE SERIES
+
+.aside__series {
+    height: 442px;
+}
+
+// ASIDE SERIES TITLE
+
+.series__title {
+    @include fontz('Brutal Type', #333333, 20px, 24px);
+}
+
+// ASIDE SERIES LIST
+
+.aside-series__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 236px;
+}
+
+.aside-series__list:before {
+    position: absolute;
+    left: 25px;
+    top: 120px;
+    content: '';
+    width: 1px;
+    height: 252px;
+    background: linear-gradient(180deg, white, 10px, black, 190px, white);
+    z-index: 0;
+}
+
+.aside-series__elem {
+    z-index: 1;
+    padding-left: 15px;
+    background: top 5px left no-repeat url(./src/assets/pointBeforeText.svg);
+}
+
+// ASIDE TESTS
+
+.aside__test {
+    height: 374px;
+}
+
+.test__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 20px 20px 20px;
+    position: relative;
+    height: 238px;
+    background: url(./src/assets/test.png);
+}
+
+// ASIDE TESTS TITLE
+
+.test__title {
+    @include fontz('Brutal Type', white, 20px, 25px);
+    font-weight: bold;
+}
+
+// ASIDE VIDEOS
+
+.aside__video {
+    height: 270px;
+}
+
+.video__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 146px;
+    background: url(./src/assets/video.jpg);
+}
+
+// ASIDE VIDEO CONTENT
+
+.video__name {
+    @include fontz('PT Sans', #333333, 15px, 21px);
+    font-weight: bold;
+}
+
+// ASIDE VIDEO NAME
+
+// ASIDE NADIS
+
+.aside__NADIS {
+    height: 226px;
+}
+
+// ASIDE NADIS DATE
+
+.NADIS__date {
+    @include fontz('PT Sans', #333333, 15px, 21px);
+    font-weight: bold;
+}
+
+// ASIDE NADIS TIME
+
+.NADIS__time {
+    @include fontz('PT Sans', #516e77, 14px, 24px);
+}
+
+// ASIDE NADIS TEXT
+
+.NADIS__text {
+    @include fontz('PT Sans', #333333, 15px, 21px);
 }
