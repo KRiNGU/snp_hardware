@@ -16,6 +16,7 @@
   <body>
     <div class="container">
       <header class="header">
+        <button class="button header__button-hamburger"></button>
         <div class="header__content">
           <img
             src="./src/assets/logo.svg"
@@ -27,7 +28,11 @@
             ​алфавита.
           </div>
         </div>
-        <button class="button header__button-enter">Вход</button>
+        <div class="header__buttons">
+          <button class="button header__button-find" type="button"></button>
+          <button class="button header__button-enter">Вход</button>
+        </div>
+        
       </header>
       <nav class="nav">
         <div class="nav__content">
@@ -45,235 +50,262 @@
           <button class="button nav__button-find" type="button"></button>
         </div>
       </nav>
-      <main class="main">
+      <div class="main-aside__container">
         <h1 class="today__title">Сегодня в выпуске</h1>
-        <section class="today">
-          <article class="today__article today__first">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
-            <div class="article__type today-article__type first-article__type">
-              СДЕЛАЙ САМ
-            </div>
-            <h2 class="title today-article__title">
-              БЛОКНОТ С ОСЦИЛЛОГРАФОМ И ГЕНЕРАТОРОМ ЧАСТОТ (ЗВУКОВОЙ КАРТОЙ)
-            </h2>
-            <p class="text today-article__text">
-              Решил немного написать про свою поделку. Несколько раз попадались
-              разнообразные diy линейки. Захотелось сделать себе что-то
-              подобное, многофункциональное. Форм-фактор линейки мне не очень
-              подходил, решил сделать в виде блокнота.
-            </p>
-            <div class="today__footer first-article__footer">
-              <p class="author first-article__author">
-                GMaksim2008 /
-                <span class="date today-article__date">22 марта, 12:15</span>
+        <main class="main">
+          <section class="today">
+            <article class="today__article today__first">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
+              <div class="article__type today-article__type first-article__type">
+                СДЕЛАЙ САМ
+              </div>
+              <h2 class="title today-article__title">
+                БЛОКНОТ С ОСЦИЛЛОГРАФОМ И ГЕНЕРАТОРОМ ЧАСТОТ (ЗВУКОВОЙ КАРТОЙ)
+              </h2>
+              <p class="text today-article__text">
+                Решил немного написать про свою поделку. Несколько раз попадались
+                разнообразные diy линейки. Захотелось сделать себе что-то
+                подобное, многофункциональное. Форм-фактор линейки мне не очень
+                подходил, решил сделать в виде блокнота.
               </p>
-              <ul class="stats today-article__stats">
-                <li class="stats__elem elem__views">4567</li>
-                <li class="stats__elem elem__likes">12</li>
-                <li class="stats__elem elem__comments">45</li>
-                <li class="stats__elem elem__reposts">678</li>
-              </ul>
-            </div>
-          </article>
-          <article class="today__article today__second">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
-            <div class="article__type today-article__type second-article__type">
-              ЖЕЛЕЗО
-            </div>
-            <h2 class="title today-article__title">
-              ДРЕВНОСТИ: УДАЛЁННАЯ РАБОТА НА УСТРОЙСТВАХ 1998 ГОДА
-            </h2>
-            <p class="text today-article__text second-article__text">
-              Поговорим о старых железках. В 2020 году у нас есть множество
-              инструментов удаленной работы — от традиционной электронной почты,
-              до весьма совершенных мессенджеров, веб-конференций с...
-            </p>
-            <div class="today__footer second-article__footer">
-              <p class="author second-article__author">
-                f15 /
-                <span class="date today-article__date">22 марта, 12:15</span>
+              <div class="today__footer first-article__footer">
+                <p class="author first-article__author">
+                  GMaksim2008 /
+                  <span class="date today-article__date">22 марта, 12:15</span>
+                </p>
+                <ul class="stats today-article__stats">
+                  <li class="stats__elem elem__views">4567</li>
+                  <li class="stats__elem elem__likes">12</li>
+                  <li class="stats__elem elem__comments">45</li>
+                  <li class="stats__elem elem__reposts">678</li>
+                </ul>
+              </div>
+            </article>
+            <article class="today__article today__second">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
+              <div class="article__type today-article__type second-article__type">
+                ЖЕЛЕЗО
+              </div>
+              <h2 class="title today-article__title">
+                ДРЕВНОСТИ: УДАЛЁННАЯ РАБОТА НА УСТРОЙСТВАХ 1998 ГОДА
+              </h2>
+              <p class="text today-article__text second-article__text">
+                Поговорим о старых железках. В 2020 году у нас есть множество
+                инструментов удаленной работы — от традиционной электронной почты,
+                до весьма совершенных мессенджеров, веб-конференций с...
               </p>
-              <ul class="stats today-article__stats">
-                <li class="stats__elem elem__views">4567</li>
-                <li class="stats__elem elem__likes">12</li>
-                <li class="stats__elem elem__comments">45</li>
-                <li class="stats__elem elem__reposts">678</li>
+              <div class="today__footer second-article__footer">
+                <p class="author second-article__author">
+                  f15 /
+                  <span class="date today-article__date">22 марта, 12:15</span>
+                </p>
+                <ul class="stats today-article__stats">
+                  <li class="stats__elem elem__views">4567</li>
+                  <li class="stats__elem elem__likes">12</li>
+                  <li class="stats__elem elem__comments">45</li>
+                  <li class="stats__elem elem__reposts">678</li>
+                </ul>
+              </div>
+            </article>
+            <article class="today__article today__third">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
+              <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
+              <div class="article__type today-article__type">ЖЕЛЕЗО</div>
+              <h2 class="title today-article__title third-article__title">
+                КЛАСТЕР ELASTICSEARCH НА 200 ТБ+
+              </h2>
+              <p class="text today-article__text"></p>
+              <div class="today__footer third-article__footer">
+                <p class="author third-article__author">
+                  entropicus /
+                  <span class="date today-article__date">22 марта, 12:15</span>
+                </p>
+                <ul class="stats today-article__stats">
+                  <li class="stats__elem elem__views">4567</li>
+                  <li class="stats__elem elem__likes">12</li>
+                  <li class="stats__elem elem__comments">45</li>
+                  <li class="stats__elem elem__reposts">678</li>
+                </ul>
+              </div>
+            </article>
+            <article class="today__text">
+              На сегодня это всё! Приходите завтра почитать об
+              <b
+                >эффективной работе из дома, о том как Crash Bandicoot взламывал
+                Playstation, о том с чего начиналось IT и об анатомии таблиц
+                LuaJIT и особенностях их использования.</b
+              >
+            </article>
+          </section>
+          <section class="best">
+            <div class="best__control-panel">
+              <ul class="best__times">
+                <li class="times__elem times__elem_active">Лучшее за месяц</li>
+                <li class="times__elem times__second times__elem_full">Лучшее за год</li>
+                <li class="times__elem times__third times__elem_full">Лучшее за всё время</li>
+                <li class="times__elem times__second times__elem_mobile">Год</li>
+                <li class="times__elem times__third times__elem_mobile">Всё время</li>
               </ul>
+              <div class="switch best__switch-times">
+                <button
+                  class="
+                    button
+                    button__switch
+                    button__switch_left
+                    button__switch-times_left
+                  "
+                ></button>
+                <button
+                  class="
+                    button
+                    button__switch
+                    button__switch_right
+                    button__switch-times_right
+                  "
+                ></button>
+              </div>
             </div>
-          </article>
-          <article class="today__article today__third">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-left">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner top-right">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-right">
-            <img src="./src/assets/leftTopCorner.svg" alt="top left" class="corner bottom-left">
-            <div class="article__type today-article__type">ЖЕЛЕЗО</div>
-            <h2 class="title today-article__title third-article__title">
-              КЛАСТЕР ELASTICSEARCH НА 200 ТБ+
-            </h2>
-            <p class="text today-article__text"></p>
-            <div class="today__footer third-article__footer">
-              <p class="author third-article__author">
-                entropicus /
-                <span class="date today-article__date">22 марта, 12:15</span>
-              </p>
-              <ul class="stats today-article__stats">
-                <li class="stats__elem elem__views">4567</li>
-                <li class="stats__elem elem__likes">12</li>
-                <li class="stats__elem elem__comments">45</li>
-                <li class="stats__elem elem__reposts">678</li>
-              </ul>
-            </div>
-          </article>
-          <article class="today__text">
-            На сегодня это всё! Приходите завтра почитать об
-            <b
-              >эффективной работе из дома, о том как Crash Bandicoot взламывал
-              Playstation, о том с чего начиналось IT и об анатомии таблиц
-              LuaJIT и особенностях их использования.</b
-            >
-          </article>
-        </section>
-        <section class="best">
-          <div class="best__control-panel">
-            <ul class="best__times">
-              <li class="times__elem times__elem_active">Лучшее за месяц</li>
-              <li class="times__elem">Лучшее за год</li>
-              <li class="times__elem">Лучшее за всё время</li>
+            <ul class="best__articles">
+              <li class="articles__elem first-best">
+                <p class="title best-article__title first-best__title">
+                  AI против COVID-19: опыт Хубэя и Флориды
+                </p>
+                <ul class="stats first-best__stats">
+                  <li class="stats__elem elem__views">4567</li>
+                  <li class="stats__elem elem__likes">12</li>
+                  <li class="stats__elem elem__comments">45</li>
+                  <li class="stats__elem elem__reposts">678</li>
+                </ul>
+              </li>
+              <li class="articles__elem second-best">
+                <p class="title best-article__title second-best__title">
+                  Биологические проблемы багфикса
+                </p>
+                <ul class="stats second-best__stats">
+                  <li class="stats__elem elem__views">4567</li>
+                  <li class="stats__elem elem__likes">12</li>
+                  <li class="stats__elem elem__comments">45</li>
+                  <li class="stats__elem elem__reposts">678</li>
+                </ul>
+              </li>
+              <li class="articles__elem third-best">
+                <p class="title best-article__title third-best__title">
+                  Цели дня как инструмент управления командой
+                </p>
+                <ul class="stats third-best__stats">
+                  <li class="stats__elem elem__views">4567</li>
+                  <li class="stats__elem elem__likes">12</li>
+                  <li class="stats__elem elem__comments">45</li>
+                  <li class="stats__elem elem__reposts">678</li>
+                </ul>
+              </li>
             </ul>
-            <div class="switch best__switch-times">
-              <button
-                class="
-                  button
-                  button__switch
-                  button__switch_left
-                  button__switch-times_left
-                "
-              ></button>
-              <button
-                class="
-                  button
-                  button__switch
-                  button__switch_right
-                  button__switch-times_right
-                "
-              ></button>
-            </div>
-          </div>
-          <ul class="best__articles">
-            <li class="articles__elem first-best">
-              <p class="title best-article__title first-best__title">
-                AI против COVID-19: опыт Хубэя и Флориды
-              </p>
-              <ul class="stats first-best__stats">
-                <li class="stats__elem elem__views">4567</li>
-                <li class="stats__elem elem__likes">12</li>
-                <li class="stats__elem elem__comments">45</li>
-                <li class="stats__elem elem__reposts">678</li>
-              </ul>
-            </li>
-            <li class="articles__elem second-best">
-              <p class="title best-article__title second-best__title">
-                Биологические проблемы багфикса
-              </p>
-              <ul class="stats second-best__stats">
-                <li class="stats__elem elem__views">4567</li>
-                <li class="stats__elem elem__likes">12</li>
-                <li class="stats__elem elem__comments">45</li>
-                <li class="stats__elem elem__reposts">678</li>
-              </ul>
-            </li>
-            <li class="articles__elem third-best">
-              <p class="title best-article__title third-best__title">
-                Цели дня как инструмент управления командой
-              </p>
-              <ul class="stats third-best__stats">
-                <li class="stats__elem elem__views">4567</li>
-                <li class="stats__elem elem__likes">12</li>
-                <li class="stats__elem elem__comments">45</li>
-                <li class="stats__elem elem__reposts">678</li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section class="series">
-          <div class="series__panel">
-            <h2 class="title panel__title">Серии</h2>
-            <div class="switch series__switch-series">
-              <button
-                class="
-                  button
-                  button__switch
-                  button__switch_left
-                  button__switch-series_left
-                "
-              ></button>
-              <button
-                class="
-                  button
-                  button__switch
-                  button__switch_right
-                  button__switch-series_right
-                "
-              ></button>
-            </div>
-          </div>
-          <ul class="series__list">
-            <li class="list__elem">
-              <h2 class="series__title">HARDWARE против заблуждений</h2>
-              <div class="series-text__list">
-                <a class="text-list__elem" href="">Мифы в IT-образовании</a>
-                <a class="text-list__elem" href="">
-                  25 самых популярных мифов о программировании и программистах
-                </a>
-                <a class="text-list__elem" href="">
-                  У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
-                  вопиющих IT-заблуждений в истории
-                </a>
-                <a class="text-list__elem" href="">
-                  У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
-                  вопиющих IT-заблуждений в истории
-                </a>
-                <a href="" class="text-list__elem">
-                  У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
-                  вопиющих IT-заблуждений в истории
-                </a>
+          </section>
+          <section class="series">
+            <div class="series__panel">
+              <h2 class="title panel__title">Серии</h2>
+              <div class="switch series__switch-series">
+                <button
+                  class="
+                    button
+                    button__switch
+                    button__switch_left
+                    button__switch-series_left
+                  "
+                ></button>
+                <button
+                  class="
+                    button
+                    button__switch
+                    button__switch_right
+                    button__switch-series_right
+                  "
+                ></button>
               </div>
-              <button class="button yellow-button">
-                Читать 27 статей
-              </button>
-            </li>
-            <li class="list__elem">
-              <h2 class="series__title">HARDWARE против заблуждений</h2>
-              <div class="series-text__list">
-                <a href="" class="text-list__elem">Мифы в IT-образовании</a>
-                <a href="" class="text-list__elem">
-                  25 самых популярных мифов о программировании и программистах
-                </a>
-                <a href="" class="text-list__elem">
-                  У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
-                  вопиющих IT-заблуждений в истории
-                </a>
-                <a href="" class="text-list__elem">
-                  У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
-                  вопиющих IT-заблуждений в истории
-                </a>
-                <a href="" class="text-list__elem">
-                  У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
-                  вопиющих IT-заблуждений в истории
-                </a>
-              </div>
-              <button class="button yellow-button">
-                Читать 27 статей
-              </button>
-            </li>
-          </ul>
-        </section>
+            </div>
+            <ul class="series__list">
+              <li class="list__elem">
+                <h2 class="series__title">HARDWARE против заблуждений</h2>
+                <div class="series-text__list">
+                  <a class="text-list__elem" href="">Мифы в IT-образовании</a>
+                  <a class="text-list__elem" href="">
+                    25 самых популярных мифов о программировании и программистах
+                  </a>
+                  <a class="text-list__elem" href="">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                  <a class="text-list__elem" href="">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                  <a href="" class="text-list__elem">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                </div>
+                <button class="button yellow-button">
+                  Читать 27 статей
+                </button>
+              </li>
+              <li class="list__elem">
+                <h2 class="series__title">HARDWARE против заблуждений</h2>
+                <div class="series-text__list">
+                  <a href="" class="text-list__elem">Мифы в IT-образовании</a>
+                  <a href="" class="text-list__elem">
+                    25 самых популярных мифов о программировании и программистах
+                  </a>
+                  <a href="" class="text-list__elem">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                  <a href="" class="text-list__elem">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                  <a href="" class="text-list__elem">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                </div>
+                <button class="button yellow-button">
+                  Читать 27 статей
+                </button>
+              </li><li class="list__elem list__elem_mobile">
+                <h2 class="series__title">HARDWARE против заблуждений</h2>
+                <div class="series-text__list">
+                  <a href="" class="text-list__elem">Мифы в IT-образовании</a>
+                  <a href="" class="text-list__elem">
+                    25 самых популярных мифов о программировании и программистах
+                  </a>
+                  <a href="" class="text-list__elem">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                  <a href="" class="text-list__elem">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                  <a href="" class="text-list__elem">
+                    У iPhone нет шансов, а компьютеры не нужны. Топ-8 самых
+                    вопиющих IT-заблуждений в истории
+                  </a>
+                </div>
+                <button class="button yellow-button">
+                  Читать 27 статей
+                </button>
+              </li>
+            </ul>
+          </section>
+        </main>
         <aside class="aside">
           <ul class="aside__list">
             <section class="aside__series aside__container">
@@ -339,7 +371,7 @@
             </section>
           </ul>
         </aside>
-      </main>
+      </div>
     </div>
   </body>
 </html>
