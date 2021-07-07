@@ -30,10 +30,15 @@ $bc: #faaf3f;
 $abbc: #f7ab32;
 $bahc: #f49f21;
 
+body {
+    background: #E5E5E5;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    background: #fff;
 }
 
 .button {
@@ -238,9 +243,9 @@ $bahc: #f49f21;
     max-width: 91px;
     height: 24px;
     @include fontz('Brutal Type', black, 16px, 22px);
-    @include fontz('PT Sans Caption' , black, 14px, 22px);
     letter-spacing: -0.02em;
     @media (max-width: 320px) {
+        @include fontz('PT Sans Caption' , black, 14px, 22px);
         width: auto;
     }
 }
@@ -304,6 +309,7 @@ $bahc: #f49f21;
 
 .today__title {
     @include fontz('PT Sans Caption', black, 28px, 22px);
+    font-weight: normal;
     margin: 0;
     height: 41px;
     letter-spacing: -0.02em;
@@ -453,6 +459,8 @@ $bahc: #f49f21;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    max-width: 169px;
+    width: 95%;
     @media (max-width: 768px) {
         bottom: 13px;
         left: 32px;
@@ -465,7 +473,6 @@ $bahc: #f49f21;
 
 .first-article__footer {
     max-width: 749px;
-    width: 95%;
     height: 23px;
     @media (max-width: 1024px) {
         max-width: 690px;
