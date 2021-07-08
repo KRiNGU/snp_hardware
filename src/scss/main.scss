@@ -30,6 +30,7 @@ $ac: #0776D2;
 $bc: #faaf3f;
 $abbc: #f7ab32;
 $bahc: #f49f21;
+$lc: #828282;
 
 body {
     background: #E5E5E5;
@@ -570,7 +571,7 @@ body {
     width: 1px;
     height: 370px;
     z-index: 0;
-    background: linear-gradient(180deg, #828282, 10px, black, 310px, white);
+    background: linear-gradient(180deg, $lc, 10px, black, 310px, white);
 }
 
 // TEXT LIST ELEM
@@ -594,4 +595,307 @@ body {
 
 .series__button {
     margin-top: 25px;
+}
+
+// ASIDE
+
+.aside {
+    width: 100%;
+    grid-column: 10/13;
+    grid-row: 2;
+    z-index: 1;
+    @media (max-width: 1024px) {
+        max-width: 251px;
+        grid-column: 10 / 13;
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+    @media (max-width: 320px) {
+        padding: 4px;
+        margin: auto;
+        margin-top: 5px;
+        display: initial;
+        grid-column: 1/13;
+        grid-row: 3;
+        max-width: 300px;
+        height: 430px;
+        overflow: hidden;
+    }
+}
+
+.aside__type {
+    @include fontz('Brural Type', white, 14px, 400, 18px);
+    letter-spacing: 0.02em;
+    width: 100%;
+    max-width: 92px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #333333;
+    text-align: center;
+    padding: 4px;
+}
+
+.aside__button-open {
+    margin-top: 20px;
+    max-width: 214px;
+    @media (max-width: 320px) {
+        max-width: 248px;
+    }
+}
+
+// ASIDE LIST
+
+.aside__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1372px;
+}
+
+// ASIDE TOP PANEL
+
+.top__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// ASIDE ALL SERIES
+
+.aside__all {
+    @include fontz('PT Sans', $ac, 14px, 400, 21px);
+    text-decoration: none;
+}
+
+.aside__container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px 17px 20px 20px;
+}
+
+// ASIDE SERIES
+
+.aside__series {
+    height: 442px;
+    @media (max-width: 320px) {
+        height: 413px;
+    }
+}
+
+.aside-series__title {
+    margin-left: -4px;
+    margin-top: 15px;
+}
+
+// ASIDE SERIES LIST
+
+.aside-series__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -5px;
+    height: 234px;
+    margin-top: 25px;
+    @media (max-width: 320px) {
+        height: 197px;
+        margin-bottom: 20px;
+    }
+}
+
+.aside-series__list:before {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    content: '';
+    width: 1px;
+    height: 252px;
+    background: linear-gradient(180deg, $lc, 10px, black, 190px, white);
+    z-index: 0;
+    @media (max-width: 320px) {
+        height: 200px;
+        top: 140px;
+        left: 20px;
+    }
+}
+
+.aside-series__elem {
+    z-index: 1;
+    padding-left: 20px;
+    @media (max-width: 320px) {
+        padding-left: 20px;
+        position: relative;
+        left: -5px;
+        max-width: 222px;
+    }
+}
+
+.aside-series__elem_mobile-on {
+    display: none;
+    @media (max-width: 320px) {
+        display: initial;
+    }
+}
+
+.aside-series__elem_mobile-off {
+    @media (max-width: 320px) {
+        display: none;
+    }
+}
+
+.aside-series__button-open {
+    margin-top: 25px;
+}
+
+// ASIDE TESTS
+
+.aside__test {
+    height: 374px;
+    padding-bottom: 24px;
+}
+
+.test__content {
+    margin-top: 17px;
+    margin-left: -2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 20px 20px 20px;
+    position: relative;
+    height: 238px;
+    background: url(./src/assets/test.png);
+}
+
+// ASIDE TESTS TITLE
+
+.test__title {
+    @include fontz('Brutal Type', white, 20px, 700, 25px);
+    letter-spacing: -0.02em;
+}
+
+// ASIDE VIDEOS
+
+.aside__video {
+    padding-left: 19px;
+    height: 270px;
+}
+
+// ASIDE VIDEO CONTENT
+
+.video__content {
+    margin-top: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 146px;
+    background: center url(./src/assets/video.jpg);
+}
+
+// ASIDE VIDEO NAME
+
+.video__name {
+    @include fontz('PT Sans', #333333, 15px, 700, 21px);
+    margin-top: 15px;
+}
+
+// ASIDE NADIS
+
+.aside__NADIS {
+    height: 226px;
+    padding-left: 19px;
+}
+
+// ASIDE NADIS DATE
+
+.NADIS__date {
+    margin-top: 20px;
+    @include fontz('PT Sans', #333333, 15px, 700, 21px);
+}
+
+// ASIDE NADIS TIME
+
+.NADIS__time {
+    margin-top: 10px;
+    @include fontz('PT Sans', #516e77, 14px, 400, 24px);
+}
+
+// ASIDE NADIS TEXT
+
+.NADIS__text {
+    @include fontz('PT Sans', #333333, 15px, 400, 21px);
+}
+
+// EFFECTS
+
+@mixin makevisible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.today__first:hover {
+    .corner {
+        @include makevisible();
+    }
+}
+
+.today__second:hover {
+    .corner {
+        @include makevisible();
+    }
+
+}
+
+.today__third:hover {
+    .corner {
+        @include makevisible();
+    }
+}
+
+.corner {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.top-left {
+    top: 8px;
+    left: 8px;
+}
+
+.top-right {
+    top: 8px;
+    right: 8px;
+    transform: rotate(90deg);
+}
+
+.bottom-right {
+    bottom: 8px;
+    right: 8px;
+    transform: rotate(180deg)
+}
+
+.bottom-left {
+    bottom: 8px;
+    left: 8px;
+    transform: rotate(-90deg)
+}
+
+.panel__elem:hover {
+    background-color: $bc;
+    color: white;
+}
+
+.text-list__elem:hover {
+    color: $bc;
+}
+
+.aside__all:hover {
+    text-decoration: underline;
+}
+
+.yellow-button:hover {
+    background-color: $bahc;
 }
