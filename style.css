@@ -84,6 +84,33 @@ body {
   border-radius: 2px;
   padding: 0; }
 
+.section__title {
+  font-family: "PT Sans Caption", sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  height: 39px;
+  display: flex;
+  align-items: center; }
+
+.yellow-button {
+  align-self: center;
+  font-family: "Brutal Type", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  width: 100%;
+  max-width: 197px;
+  height: 32px;
+  background-color: #faaf3f; }
+  @media (max-width: 768px) {
+    .yellow-button {
+      max-width: 285px; } }
+
 .header {
   position: relative;
   height: 173px;
@@ -192,17 +219,8 @@ body {
   display: flex; }
 
 .today__title {
-  font-family: "PT Sans Caption", sans-serif;
-  color: #000;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 22px;
-  letter-spacing: -0.02em;
   grid-column: 1/12;
-  grid-row: 1;
-  height: 39px;
-  display: flex;
-  align-items: center; }
+  grid-row: 1; }
 
 .main {
   grid-column: 1/10;
@@ -471,4 +489,110 @@ body {
 
 .third-best {
   background: center url(./src/assets/dayPoints.jpg); }
+
+.series {
+  display: grid;
+  row-gap: 30px;
+  grid-column: 1 / 10; }
+  @media (max-width: 1024px) {
+    .series {
+      grid-column: 1 / 9; } }
+  @media (max-width: 768px) {
+    .series {
+      overflow: hidden;
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media (max-width: 320px) {
+    .series {
+      display: none; } }
+
+.series__panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.series__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .series__list {
+      width: 1020px; } }
+
+.list__elem {
+  padding: 20px 20px 28px 17px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+  height: 516px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 1024px) {
+    .list__elem {
+      max-width: 350px; } }
+  @media (max-width: 768px) {
+    .list__elem {
+      max-width: 325px;
+      margin-right: 20px;
+      padding-left: 15px;
+      padding-bottom: 17px; } }
+
+.list__elem_mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .list__elem_mobile {
+      display: flex; } }
+
+.series__title {
+  width: 100%;
+  max-width: 250px;
+  font-family: "Brutal Type", sans-serif;
+  color: #333333;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 2px; }
+
+.series-text__list {
+  margin-top: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; }
+  @media (max-width: 768px) {
+    .series-text__list {
+      width: 290px;
+      margin-bottom: 25px; } }
+
+.series-text__list:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 1px;
+  height: 370px;
+  z-index: 0;
+  background: linear-gradient(180deg, #828282, 10px, black, 310px, white); }
+
+.text-list__elem {
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  padding-left: 25px;
+  background: top 6px left no-repeat url(./src/assets/pointBeforeText.svg);
+  z-index: 1;
+  text-decoration: none;
+  color: black; }
+  @media (max-width: 868px) {
+    .text-list__elem {
+      font-size: 13px; } }
+  @media (max-width: 804px) {
+    .text-list__elem {
+      font-size: 11px; } }
+
+.series__button {
+  margin-top: 25px; }
 
