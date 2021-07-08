@@ -141,7 +141,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
-    grid-template-rows: 39px 1105px 29px 177px 39px 516px;
+    grid-template-rows: repeat(6, auto);
     row-gap: 30px;
     width: 100%;
     max-width: 1060px;
@@ -174,6 +174,7 @@ body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     column-gap: 20px;
+    row-gap: inherit;
 }
 
 .today {
@@ -182,8 +183,9 @@ body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     column-gap: 25px;
-    grid-template-rows: repeat(2, 492px) 66px;
+    grid-template-rows: repeat(2, 492px) 71px;
     row-gap: 25px;
+    max-height: 1105px;
 }
 
 .today__article {
@@ -311,7 +313,143 @@ body {
 .today__text {
     grid-row: 3;
     grid-column: 1 / 10;
-    height: 66px;
+    height: 70xpx;
     @include fontz('PT Sans', #333, 17px, 400, 24px);
+}
+
+.today__text_bold {
+    height: 66px;
+    max-height: 66px;
+}
+
+.best {
+    display: grid;
+    row-gap: 30px;
+    grid-column: 1/10;
+    grid-row: 2;
+    overflow: hidden;
+}
+
+.best__control-panel {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 29px;
+    @media (max-width: 768px) {
+        max-width: 495px;
+    }
+    @media (max-width: 320px) {
+        max-width: 288px;
+    }
+}
+
+.best__times {
+    display: flex;
+    width: 100%;
+    max-width: 495px;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 400px) {
+        justify-content: space-around;
+    }
+    @media (max-width: 320px) {
+        justify-content: space-between;
+    }
+}
+
+.times__elem {
+    height: 35px;
+    @include fontz('PT Sans', black, 17px, 700, 24px);
+    border: none;
+}
+
+.times__elem_full {
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+.times__elem_mobile {
+    display: none;
+    @media (max-width: 400px) {
+        display: block;
+    }
+}
+
+.times__elem_active {
+    border-bottom: 2px solid $abbc;
+}
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 47px;
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.button__switch {
+    width: 15px;
+    height: 20px;
+}
+
+.button__switch_left {
+    background: no-repeat url(./src/assets/vector-left.svg);
+}
+
+.button__switch_right {
+    background: left no-repeat url(./src/assets/vector-left.svg);
+    transform: rotate(180deg);
+}
+
+.best__articles {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    @media (max-width: 1024px) {
+        width: 790px;
+    }
+}
+
+.articles__elem:last-child {
+    margin-right: 0;
+}
+
+// ARTICLES ELEM
+
+.articles__elem {
+    margin-right: 20px;
+    font-weight: 700;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 250px;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        padding-bottom: 20px;
+    }
+}
+
+.best-article__title {
+    @include fontz("Brutal Type", white, 15px, 700, 24px);
+    letter-spacing: -0.02em;
+}
+
+.first-best {
+    background: center url(./src/assets/AIvsCOVID.jpg);
+}
+
+.second-best {
+    background: center url(./src/assets/bioProblems.jpg);
+}
+
+.third-best {
+    background: center url(./src/assets/dayPoints.jpg);
 }
 
