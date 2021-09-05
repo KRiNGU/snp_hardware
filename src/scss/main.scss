@@ -1202,6 +1202,7 @@ body {
 
 .NADIS__text {
     @include fontz('PT Sans', #333333, 15px, 400, 21px);
+    text-decoration: none;
 }
 
 // EFFECTS
@@ -1243,10 +1244,8 @@ body {
     }
 }
 
-.NADIS__content:hover {
-    .corner {
-        @include makevisible();
-    }
+.NADIS__text:hover {
+    color: $bahc;
 }
 
 .first-best:hover {

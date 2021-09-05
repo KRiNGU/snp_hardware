@@ -1159,7 +1159,8 @@ body {
   color: #333333;
   font-weight: 400;
   font-size: 15px;
-  line-height: 21px; }
+  line-height: 21px;
+  text-decoration: none; }
 
 .today__first:hover .corner {
   transition: 0.5s;
@@ -1186,10 +1187,8 @@ body {
   visibility: visible;
   opacity: 1; }
 
-.NADIS__content:hover .corner {
-  transition: 0.5s;
-  visibility: visible;
-  opacity: 1; }
+.NADIS__text:hover {
+  color: #f49f21; }
 
 .first-best:hover .corner {
   transition: 0.5s;
