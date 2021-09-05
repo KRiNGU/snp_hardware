@@ -131,9 +131,14 @@ body {
   background: url(./src/assets/whiteHamburger.svg);
   border-radius: 0;
   margin-left: 16px; }
+  @media (max-width: 768px) {
+    .header__button-hamburger {
+      position: absolute;
+      top: 16px;
+      display: initial; } }
   @media (max-width: 375px) {
     .header__button-hamburger {
-      display: initial; } }
+      position: initial; } }
 
 .header__content {
   display: flex;
@@ -148,7 +153,8 @@ body {
       margin-left: 31px; } }
   @media (max-width: 768px) {
     .header__content {
-      justify-content: center; } }
+      justify-content: center;
+      margin-left: 0; } }
   @media (max-width: 375px) {
     .header__content {
       justify-content: start;

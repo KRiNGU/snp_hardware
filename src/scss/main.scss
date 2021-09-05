@@ -94,8 +94,13 @@ body {
     background: url(./src/assets/whiteHamburger.svg);
     border-radius: 0;
     margin-left: 16px;
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
+        position: absolute;
+        top:16px;
         display: initial;
+    }
+    @media (max-width: 375px) {
+        position: initial;
     }
 }
 
@@ -112,6 +117,7 @@ body {
     }
     @media (max-width: 768px) {
         justify-content: center;
+        margin-left: 0;
     }
     @media (max-width: 375px) {
         justify-content: start;
