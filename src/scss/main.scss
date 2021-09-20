@@ -595,6 +595,7 @@ a {
 }
 
 .today__text {
+  padding-right: 10px;
   grid-row: 3;
   grid-column: 1 / 10;
   @include fontz("PT Sans", #333, 17px, 400, 24px);

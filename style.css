@@ -625,6 +625,7 @@ a {
       max-width: 600px; } }
 
 .today__text {
+  padding-right: 10px;
   grid-row: 3;
   grid-column: 1 / 10;
   font-family: "PT Sans", sans-serif;
