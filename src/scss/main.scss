@@ -246,11 +246,13 @@ a {
   @include fontz("Brutal Type", #000, 16px, 400, 22px);
   letter-spacing: -0.02em;
   padding: 0px 10px;
+  @media (max-width: 440px) {
+    padding: 0;
+  }
   @media (max-width: 375px) {
     font-family: "PT Sans Caption", sans-serif;
     font-size: 14px;
     width: auto;
-    padding: 0;
   }
 }
 
@@ -627,35 +629,29 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 29px;
-  @media (max-width: 768px) {
-    max-width: 100vw;
-  }
   @media (max-width: 520px) {
-    max-width: 95vw;
-  }
-  @media (max-width: 375px) {
-    max-width: 288px;
+    padding-right: 15px;
   }
 }
 
 .best__times {
   display: flex;
-  width: 100%;
-  max-width: 495px;
-  justify-content: space-between;
   align-items: center;
-  @media (max-width: 430px) {
-    padding-right: 20%;
+  @media (max-width: 790px) {
+    width: 100%;
+    max-width: 495px;
+    justify-content: space-between;
+  }
+  @media (max-width: 768px) {
+    max-width: none;
+    justify-content: start;
+  }
+  @media (max-width: 520px) {
+    justify-content: space-around;
   }
   @media (max-width: 375px) {
-    padding-right: 5px;
+    justify-content: space-between;
   }
-  // @media (max-width: 430px) {
-  //     justify-content: space-around;
-  // }
-  // @media (max-width: 375px) {
-  //     justify-content: space-between;
-  // }
 }
 
 .times__elem {
@@ -664,6 +660,21 @@ a {
   border: none;
   @media (max-width: 375px) {
     height: 28px;
+  }
+}
+
+// Повесил до 790px, потому что где-то на 788 ломалось и выходило за блок.
+// Там резкий перескок, но он маленький, поэтому, вроде, незаметен
+
+.times__elem:not(:first-child) {
+  @media (min-width: 790px) {
+    margin-left: 53px;
+  }
+  @media (max-width: 768px) {
+    margin-left: 53px;
+  }
+  @media (max-width: 520px) {
+    margin-left: 0;
   }
 }
 
